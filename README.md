@@ -5,7 +5,7 @@
  Primeiro Módulo:
  <ul type="I">
   <li>Material de Apoio - Git e Github</li>
-  <li>HTML5</li>
+  <li>HTML5</li>Utilizamos nesse projetos as tags semânticas um código bem estruturado, compreenssivél para quem está iniciando, foram aulas bem produtivas e de boa didática com a professora Maria Eduarda.
   <li>CSS3</li>
   <li>Fundamentos de JavaScript</li>
   <li>Introdução a API</li>
