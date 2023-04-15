@@ -48,6 +48,7 @@
             <input type="radio" name="ADMIN">SIM
             <input type="radio" name="ADMIN">NÃO
             
+            <button>CADASTRAR USUÁRIO</button>
             
           </div>
         </form>
