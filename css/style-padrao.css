@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Mukita', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;/* unidade vh (a altura do viewport), permitindo que o body defina um valor minimo de altura com base na altura total do viewport do usuáro*/
+}
+
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+}
+
+/* Estilização do  HEADER - NAV */
+
+.cabecalho{
+    width: 100%;
+    background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacto-copia-la-est%C3%AI-en-parte-hacia-tacos-191566359.jpg);
+}
+
+.menu .ul-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ul-menu li{
+    list-style: none;
+    padding: 2rem;
+    color: antiquewhite;
+
+}
+
+.bi-file-person{
+    font-size: 60px;
+    color: var(--background-clean)
+}
+
+ul li#imagem-localizacao{
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: 5rem;
+    align-items: center;
+
+}
+
+.bi-geo-alt{
+    font-size: 60px;
+    color: var(--background-clean)
+}
+
+.nome-localizacao{
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: .5rem;
+}
+
+.bi-card-image{
+    font-size: 60px;
+    color: var(--background-clean)
+}
+
+/* Estilizacao de seção das MENSAGENS*/
+section#mensagens-inicio{
+    padding: 2rem;
+    background: var(--background-clean);
+}
+
+#nome-empresa{
+    font-style: bold;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa);
+}
+.mensagem{
+    color: gray;
+    font-size: 25px;
+}
+
+/* Estilizacao da seção INPUT */
+section#input{
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+i.bi-search{
+    position: absolute;
+    color: var(--cor-da-empresa);
+    padding-top: .2rem;
+    padding-left: 4rem;
+    font-size: 40px;
+}
+
+#input-text{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 4rem;
+    border: 2mm ridge rgb(255, 197, 5);
+    text-align: center;
+}
+
+input:focus{
+    outline: 0;
+}
+
+::-webkit-input-placeholder{
+    color: grey;
+}
+
+/* Estilização do Footer*/
+.footer{
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card li{
+    list-style: none;
+}
+
+.footer-card a{
+    text-decoration: none;
+    text-align:center;
+    color: black;
+}
+
+.footer-item{
+    margin: 5rem;
+}
+
+i.bi-house-fill{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-cart{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-stickies{
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.footer-nome-item{
+    font-size: 20px;
+    font-weight: 700;
+    color: gray;
+}
