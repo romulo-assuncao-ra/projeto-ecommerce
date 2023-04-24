@@ -13,13 +13,21 @@ body{
 :root{
     --background-clean: beige;
     --cor-da-empresa: orange;
+    --cor1:#F2A0DC;
+    --cor2:#A9ABD9;
+    --cor3:#D5D7F2;
+    --cor4:#593A28;
+    --cor5:#F2DCDC;
+
 }
 
 /* Estilização do  HEADER - NAV */
 
 .cabecalho{
-    width: 100%;
-    background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacto-copia-la-est%C3%AI-en-parte-hacia-tacos-191566359.jpg);
+    /*width: 100%;
+    background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacto-copia-la-est%C3%AI-en-parte-hacia-tacos-191566359.jpg);*/
+    /*background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));*/
+    background: var(--cor1);
 }
 
 .menu .ul-menu{
@@ -31,13 +39,13 @@ body{
 .ul-menu li{
     list-style: none;
     padding: 2rem;
-    color: antiquewhite;
+    color: var(--cor4);
 
 }
 
 .bi-file-person{
     font-size: 60px;
-    color: var(--background-clean)
+    color: var(--cor4)
 }
 
 ul li#imagem-localizacao{
@@ -51,7 +59,7 @@ ul li#imagem-localizacao{
 
 .bi-geo-alt{
     font-size: 60px;
-    color: var(--background-clean)
+    color: var(--cor4)
 }
 
 .nome-localizacao{
@@ -62,7 +70,7 @@ ul li#imagem-localizacao{
 
 .bi-card-image{
     font-size: 60px;
-    color: var(--background-clean)
+    color: var(--cor4)
 }
 
 /* Estilizacao de seção das MENSAGENS*/
@@ -75,10 +83,10 @@ section#mensagens-inicio{
     font-style: bold;
     font-size: 50px;
     margin-bottom: .5rem;
-    color: var(--cor-da-empresa);
+    color: var(--cor1);
 }
 .mensagem{
-    color: gray;
+    color: var(--cor4);
     font-size: 25px;
 }
 
@@ -93,7 +101,7 @@ section#input{
 
 i.bi-search{
     position: absolute;
-    color: var(--cor-da-empresa);
+    color: var(--cor1);
     padding-top: .2rem;
     padding-left: 4rem;
     font-size: 40px;
@@ -105,7 +113,7 @@ i.bi-search{
     font-size: 25px;
     padding: 1.2rem 0 1.2rem;
     padding-left: 4rem;
-    border: 2mm ridge rgb(255, 197, 5);
+    border: 2mm ridge var(--cor1);
     text-align: center;
 }
 
@@ -114,15 +122,59 @@ input:focus{
 }
 
 ::-webkit-input-placeholder{
-    color: grey;
+    color: var(--cor4);
 }
 
 input[type=text]{
-    color: grey;
+    color: var(--cor4);
+}
+
+/*Eslilização da sção CATEGORIA*/
+section#categorias{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#categoria-ul{
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-a{
+    margin: 3rem 5rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+li.categoria{
+    margin: auto;
+    color: #593A28;
+    list-style: none;
+    border:solid 1px #F2A0DC;
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    /*Transição ao passar o mouse sobre os menu, elevando a caixa sinalizando a opção*/
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.categoria:hover{
+    background-color: #F2DCDC;
+    border: 5px solid #F2A0DC;
+    transform: scale(1);
+    box-shadow: 0 5px 15px #593A28;
+}
+
 
 /* Estilização do Footer*/
-.footer{
-    background-color: var(--background-clean);
+footer{
+    /*background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));*/
+    background: var(--cor1);
     margin-top: 5rem;
 }
 
@@ -148,31 +200,31 @@ input[type=text]{
 
 i.bi-house-fill{
     font-size: 60px;
-    color: var(--cor-da-empresa);
+    color: var(--cor4);
 }
 
 i.bi-emoji-smile{
     font-size: 60px;
-    color: var(--cor-da-empresa);
+    color: var(--cor4);
 }
 
 i.bi-upc-scan{
     font-size: 60px;
-    color: var(--cor-da-empresa);
+    color: var(--cor4);
 }
 
 i.bi-cart{
     font-size: 60px;
-    color: var(--cor-da-empresa);
+    color: var(--cor4);
 }
 
 i.bi-stickies{
     font-size: 60px;
-    color: var(--cor-da-empresa);
+    color: var(--cor4);
 }
 
 .footer-nome-item{
     font-size: 20px;
     font-weight: 700;
-    color: gray;
+    color: var(--cor4);
 }
