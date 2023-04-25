@@ -146,8 +146,11 @@ section#categorias{
     text-decoration: none;
     justify-content: center;
 }
-
 li.categoria{
+    margin: auto;
+}
+
+.categoria{
     margin: auto;
     color: #593A28;
     list-style: none;
@@ -168,6 +171,101 @@ li.categoria{
     border: 5px solid #F2A0DC;
     transform: scale(1);
     box-shadow: 0 5px 15px #593A28;
+}
+
+/* Estilização da seção PRODUTO */
+section#cards-produtos{
+    display: flex;
+
+}
+
+.card-produto{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px #593A28;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+}
+
+.card-produto:hover{
+    box-shadow: inset 50px 0 0 0;
+    color: #F2DCDC;
+}
+
+.card-produto img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+h3.nome-do-produto{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    color: #593A28;
+    margin-bottom: 1.3rem;
+    margin-top: .2rem;
+
+}
+
+/* EStilização do VERMAIS */
+
+    div#ver-mais{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    div#ver-mais{
+        color: #F2DCDC;
+        text-decoration: none;
+        margin: .8rem 2rem;
+    }
+
+/* Estilização da AVALIAÇÂO*/
+
+section#avaliacao{
+    text-align: center;
+    border: .5rem outset var(--cor2);
+    outline: .5rem solid var(--cor3);
+    box-shadow: 0 0 0 1rem gray;
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font: bold 1rem sans-serif;
+}
+
+#titulo-avaliacao{
+    font-size: 40px;
+    color: var(--cor2);
+    text-shadow: 2px 2px var(--cor5);
+}
+
+.bi-hand-thumbs-up{
+    font-size: 40px;
+    color: #593A28;
+    text-shadow: 2px 2px var(--cor5);
+}
+
+.bi-hand-thumbs-down{
+    font-size: 40px;
+    color: #593A28;
+    text-shadow: 2px 2px var(--cor5);
+}
+
+#frase-avaliacao{
+    font-size: 30px;
+    color: gray;
 }
 
 
@@ -228,3 +326,28 @@ i.bi-stickies{
     font-weight: 700;
     color: var(--cor4);
 }
+
+/* Usando media queries para transformar nossa page acessível a tela menores*/
+
+@media screen and (max-width: 480px)
+    body{
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+    }
+
+    i.bi-geo-alt, .nome-localizacao,i.bi-card-image{
+        display: flex;
+    }
+
+    ul.footer-card{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer-card a{
+        width: 100%;
+    }
