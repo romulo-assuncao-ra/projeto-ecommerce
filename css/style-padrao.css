@@ -327,7 +327,7 @@ i.bi-stickies{
     color: var(--cor4);
 }
 
-/* Usando media queries para transformar nossa page acessível a tela menores*/
+/* Usando media queries para transformar nossa page acessível a tela menores
 
 @media screen and (max-width: 480px)
     body{
@@ -351,3 +351,4 @@ i.bi-stickies{
     .footer-card a{
         width: 100%;
     }
+*/

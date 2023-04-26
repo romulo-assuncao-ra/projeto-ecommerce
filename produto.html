@@ -9,65 +9,101 @@
     <title>HOME</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li><p>Manaus, AM</p></li>
-                <li><i class="bi bi-card-image"></i></li>
-            </ul>
+    <header class="cabecalho">
+        <nav class="menu">
+          <ul class="ul-menu">
+            <a href="login.html">
+              <li id="image-usuario"><i class="bi bi-file-person"></i></li>
+            </a>
+    
+            <li id="image-localizacao">
+              <i class="bi bi-geo-alt"></i>
+              <p class="nome-localizacao">Londrina, PR</p>
+            </li>
+    
+            <li class="logo-empresa">
+              <i class="bi bi-card-image"></i>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <section>
-        <i class="bi bi-chevron-double-left"></i>
+      <section class="favorite">
+        <a href="index.html"><i class="bi bi-chevron-double-left"></i></a>
         <i class="bi bi-heart-fill"></i>
-    </section>
-
-    <section>
-        <h1>NOME DO PRODUTO</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in beatae commodi unde tempore voluptatem laboriosam voluptate magnam! Dicta beatae corporis maiores explicabo nihil inventore. Facere molestiae dignissimos possimus ad.</p>
-        <div>
-            <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg" alt="imagem do produto">
-
-            <div>
-                <i class="bi bi-dash-square"></i>
-                <p>1</p>
-                <i class="bi bi-plus-square"></i>
-            </div>
+      </section>
+    
+      <section class="secao-produto">
+        <h1 id="nome-empresa">NOME DO PRODUTO</h1>
+        <p id="descricao-produto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aut
+          enim illum ipsum cum modi!
+        </p>
+        <div class="imagem-quantidade">
+          <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+            alt="Logo exemplo" id="imagem-produto" />
+          <div class="quantidade-produto">
+            <i class="bi bi-dash-square"></i>
+            <p class="numero-produto">1</p>
+            <i class="bi bi-plus-square"></i>
+          </div>
         </div>
-
-        <div>
-            <p>Preço Unitário</p>
-            <p>R$ 00000,00</p>
-
-            <p>Preço Total</p>
-            <p>R$ 00000,00</p>
+    
+        <div class="precos-poduto">
+          <p class="precos">Preço unitário</p>
+          <p class="precos-valores">R$ 0000,00</p>
+    
+          <p class="precos">Preço Total</p>
+          <p class="precos-valores">R$ 0000,00</p>
         </div>
-        <i class="bi bi-cart-plus"></i>
-        <button>ADICIONAR AO CARRINHO </button>
-        <div>
-
+    
+        <div class="botao-carrinho">
+          <!-- <i class="bi bi-cart-plus"></i> -->
+          <button class="botao-add-carrinho"></i>ADICIONAR AO CARRINHO</button>
         </div>
-    </section>
+      </section>
+    
 
-    <footer>
-        <ul>
-            <li><a href=""><i class="bi bi-house-fill"></i><p>HOME</p></a>
+    <footer id="footer" class="footer">
+        <ul class="footer-card">
+          <a href="index.html">
+            <li id="footer-item">
+              <i class="bi bi-house-fill"></i>
+              <p class="footer-name-item">HOME</p>
             </li>
-            <li>
-                <a href=""><i class="bi bi-emoji-smile"></i><p>PERFIL</p></a>
+          </a>
+    
+          <a href="cadastrar_usuario.html">
+            <li id="footer-item">
+              <i class="bi bi-emoji-smile"></i>
+              <p class="footer-name-item">CADASTRO USUÁRIO</p>
             </li>
-            <li>
-                <a href=""><i class="bi bi-receipt"></i><p>CUPONS</p></a>
+          </a>
+    
+          <a href="cadastro_produto.html">
+            <li id="footer-item">
+              <i class="bi bi-upc-scan"></i>
+              <p class="footer-name-item">CADASTRO PRODUTO</p>
             </li>
-            <li>
-                <a href=""><i class="bi bi-stickies"></i><p>PEDIDOS</p></a>
+          </a>
+    
+          <a href="carrinho.html">
+            <li id="footer-item">
+              <i class="bi bi-cart"></i>
+              <p class="footer-name-item">CARRINHO</p>
             </li>
-
+          </a>
+    
+          <a href="produto.html">
+            <li id="footer-item">
+              <i class="bi bi-stickies"></i>
+              <p class="footer-name-item">PRODUTO</p>
+            </li>
+          </a>
         </ul>
-    </footer>
-</main>
-</body>
-</html>
+      </footer>
+      <script src="./js/script-produto.js"></script>
+    
+    </body>
+    
+    </html>

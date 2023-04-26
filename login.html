@@ -9,44 +9,75 @@
     <title>HOME</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li><p>Manaus, AM</p></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html"><li><i class="bi bi-file-person"></i></li></a>
+
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i></a>
+                <p class="nome-localizacao">Manaus, AM</p></li>
+
                 <li><i class="bi bi-card-image"></i></li>
             </ul>
         </nav>
     </header>
     
-    <section>
-      <h1>NOME DA EMPRESA</h1>
-        <img src="src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg" alt=" ">
-        
-           <div>
-               <label for=" ">LOGIN</label>
-               <input type="text">
-                                 
-               <label for=" ">SENHA</label>
-               <input type="text">
-                                 
-               <button>REALIZAR LOGIN</button>
-           </div>
+    <section class="secao-login">
+        <h1 id="nome-empresa">NOME DA EMPRESA</h1>
+        <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg" alt="" />
   
-    <footer>
-            <ul>
-                <li><a href=""><i class="bi bi-house-fill"></i><p>HOME</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-emoji-smile"></i><p>PERFIL</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-receipt"></i><p>CUPONS</p></a>
-                </li>
-                <li>
-                    <a href=""><i class="bi bi-stickies"></i><p>PEDIDOS</p></a>
-                </li>
+        <section id="mensagem-ok" class="mensagem-ok">
+  
+        </section>
+  
+        <div class="login-senha">
+          <label for="" class="login">LOGIN</label>
+          <input id="myInput" type="text" class="input"/>
+  
+          <label for="" class="login">SENHA</label>
+          <input id="myInput" type="password" class="input"/>
+  
+          <button id="addBtn" class="botao">REALIZAR LOGIN</button>
+        </div>
+  
+      </section>
+  
+           <footer id="footer" class="footer">
+            <ul class="footer-card">
+                <a href="index.html">
+                    <li class="footer-item">
+                        <i class="bi bi-house-fill"></i>
+                        <p class="footer-nome-item">HOME</p>
+                     </li>
+                </a>
+
+                <a href="cadastrar_usuario.html">
+                    <li class="footer-item">
+                        <i class="bi bi-emoji-smile"></i>
+                        <p class="footer-nome-item">CADASTRO USUARIO</p>
+                    </li>
+                </a>
+
+                <a href="cadastrar_produto.html">
+                    <li class="footer-item">
+                        <i class="bi bi-upc-scan"></i>
+                        <p class="footer-nome-item">CADASTRO DE PRODUTO</p>
+                    </li>
+                </a>
+
+                <a href="carrinho.html">
+                    <li class="footer-item">
+                        <i class="bi bi-cart"></i>
+                        <p class="footer-nome-item">CARRINHO</p>
+                    </li>
+                 </a>
+
+                <a href="produto.html">
+                    <li class="footer-item">
+                        <i class="bi bi-stickies"></i>
+                        <p class="footer-nome-item">PRODUTO</p>
+                    </li>
+                </a>
 
             </ul>
         </footer>
