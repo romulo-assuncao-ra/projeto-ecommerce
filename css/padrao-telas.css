@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Mukita', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;/* unidade vh (a altura do viewport), permitindo que o body defina um valor minimo de altura com base na altura total do viewport do usuáro*/
+}
+
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+    --cor1:#F2A0DC;
+    --cor2:#A9ABD9;
+    --cor3:#D5D7F2;
+    --cor4:#593A28;
+    --cor5:#F2DCDC;
+
+}
+
+/* Estilização do  HEADER - NAV */
+
+.cabecalho{
+    width: 100%;    
+    background: var(--cor1);
+}
+
+.menu .ul-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    padding: 2rem;
+    color: var(--cor4);
+}
+
+.bi-file-person{
+    padding: 2rem;
+    font-size: 70px;
+    /*color: var(--cor4*/
+}
+
+ul li#imagem-localizacao{
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: 0.8rem;
+    align-items: center;
+
+}
+
+i.bi-geo-alt{
+    font-size: 60px;
+    color: var(--cor4)
+}
+
+input#cep{
+    height: 3rem;
+    border-radius: 2rem;
+}
+
+p.nome-localizacao{
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+ul li.logo-empresa{
+    padding-left: 5rem;
+}
+
+i.bi-card-image{
+    font-size: 70px;
+    color: var(--cor4)
+}
+
+/* Estilizacao de seção das MENSAGENS
+
+section#mensagens-inicio{
+    padding: 2rem;
+    background: var(--background-clean);
+}
+
+#nome-empresa{
+    font-style: bold;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor1);
+}
+.mensagem{
+    color: var(--cor4);
+    font-size: 25px;
+}
+
+
+/* Estilizacao da seção INPUT 
+section#input{
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+i.bi-search{
+    position: absolute;
+    color: var(--cor1);
+    padding-top: .2rem;
+    padding-left: 4rem;
+    font-size: 40px;
+}
+
+#input-text{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 4rem;
+    border: 2mm ridge var(--cor1);
+    text-align: center;
+}
+
+input:focus{
+    outline: 0;
+}
+
+::-webkit-input-placeholder{
+    color: var(--cor4);
+}
+
+input[type=text]{
+    color: var(--cor4);
+}
+
+/*Eslilização da sção CATEGORIA
+section#categorias{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#categoria-ul{
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-a{
+    margin: 3rem 5rem;
+    text-decoration: none;
+    justify-content: center;
+}
+li.categoria{
+    margin: auto;
+}
+
+.categoria{
+    margin: auto;
+    color: #593A28;
+    list-style: none;
+    border:solid 1px #F2A0DC;
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    /*Transição ao passar o mouse sobre os menu, elevando a caixa sinalizando a opção
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.categoria:hover{
+    background-color: #F2DCDC;
+    border: 5px solid #F2A0DC;
+    transform: scale(1);
+    box-shadow: 0 5px 15px #593A28;
+}
+
+/* Estilização da seção PRODUTO 
+section#cards-produtos{
+    display: flex;
+
+}
+
+.card-produto{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px #593A28;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+}
+
+.card-produto:hover{
+    box-shadow: inset 50px 0 0 0;
+    color: #F2DCDC;
+}
+
+.card-produto img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+h3.nome-do-produto{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    color: #593A28;
+    margin-bottom: 1.3rem;
+    margin-top: .2rem;
+
+}
+
+/* EStilização do VERMAIS 
+
+    div#ver-mais{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    div#ver-mais{
+        color: #F2DCDC;
+        text-decoration: none;
+        margin: .8rem 2rem;
+    }
+
+/* Estilização da AVALIAÇÂO
+
+section#avaliacao{
+    text-align: center;
+    border: .5rem outset var(--cor2);
+    outline: .5rem solid var(--cor3);
+    box-shadow: 0 0 0 1rem gray;
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font: bold 1rem sans-serif;
+}
+
+#titulo-avaliacao{
+    font-size: 40px;
+    color: var(--cor2);
+    text-shadow: 2px 2px var(--cor5);
+}
+
+.bi-hand-thumbs-up{
+    font-size: 40px;
+    color: #593A28;
+    text-shadow: 2px 2px var(--cor5);
+}
+
+.bi-hand-thumbs-down{
+    font-size: 40px;
+    color: #593A28;
+    text-shadow: 2px 2px var(--cor5);
+}
+
+#frase-avaliacao{
+    font-size: 30px;
+    color: gray;
+}
+*/
+
+/* Estilização do Footer*/
+footer{
+    /*background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));*/
+    background: var(--cor1);
+    margin-top: 5rem;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card li{
+    list-style: none;
+}
+
+.footer-card a{
+    text-decoration: none;
+    text-align:center;
+}
+
+.footer-item{
+    margin: 5rem;
+}
+
+i.bi-house-fill{
+    font-size: 60px;
+    color: var(--cor4);
+}
+
+i.bi-emoji-smile{
+    font-size: 60px;
+    color: var(--cor4);
+}
+
+i.bi-upc-scan{
+    font-size: 60px;
+    color: var(--cor4);
+}
+
+i.bi-cart{
+    font-size: 60px;
+    color: var(--cor4);
+}
+
+i.bi-stickies{
+    font-size: 60px;
+    color: var(--cor4);
+}
+
+.footer-nome-item{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cor4);
+}
+
+/* Usando media queries para transformar nossa page acessível a tela menores*/
+
+@media screen and (max-width: 480px)
+    body{
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+    }
+
+    i.bi-geo-alt, .nome-localizacao,i.bi-card-image{
+        display: none;
+    }
+
+    ul.footer-card{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer-card a{
+        width: 100%;
+    }
