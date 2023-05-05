@@ -1,6 +1,17 @@
 /* Estilizacao de seção das MENSAGENS */
 
-section#mensagens-inicio{
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+    --cor1:#F2A0DC;
+    --cor2:#A9ABD9;
+    --cor3:#D5D7F2;
+    --cor4:#593A28;
+    --cor5:#F2DCDC;
+
+}
+
+#mensagens-inicio{
     padding: 2rem;
     background: var(--background-clean);
 }
@@ -9,7 +20,7 @@ section#mensagens-inicio{
     font-style: bold;
     font-size: 50px;
     margin-bottom: .5rem;
-    color: var(--cor1);
+    color: var(--cor4);
 }
 .mensagem{
     color: var(--cor4);
@@ -30,7 +41,7 @@ i.bi-search{
     position: absolute;
     color: var(--cor1);
     padding-top: 0.2rem;
-    padding-left: 5rem;
+    padding-left: 6rem;
     margin right: 2rem;
     font-size: 40px;
 }
@@ -50,7 +61,7 @@ input:focus{
 }
 
 ::-webkit-input-placeholder{
-    color: var(--cor4);
+    color: var(--cor1);
 }
 
 input[type=text]{
@@ -204,8 +215,8 @@ h3.nome-produto-card{
 }
 */
 
-/* Usando media queries para transformar nossa page acessível a tela menores */
-@media screen and (max-width: 480px){
+ Usando media queries para transformar nossa page acessível a tela menores 
+@media screen and (max-width: 667px){
     body{
       width: 100%;
     }
@@ -216,7 +227,7 @@ h3.nome-produto-card{
   
     i.bi-search {
       position: absolute;
-      color: var(--cor-empresa);
+      color: var(--cor4);
       padding-top: 0.2rem;
       padding-left: 3rem;
       margin-right: 1rem;
@@ -229,7 +240,7 @@ h3.nome-produto-card{
       width: 90%;
       padding: 1.2rem 0 1.2rem;
       padding-left: 4rem;
-      border: 2mm ridge rgba(255, 197, 5, 0.943);
+      border: 2mm ridge var(--cor4);
       text-align: center;
     }   
   
@@ -258,7 +269,7 @@ h3.nome-produto-card{
   }
   
   
-  /* @media screen and (max-width: 480px){
+  @media screen and (max-width: 667px){
     body{
         width: 100%;
     }
@@ -281,4 +292,4 @@ h3.nome-produto-card{
     span#frase-avaliacao{
         display: none;
     }
-  } */
+  } 

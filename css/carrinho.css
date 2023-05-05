@@ -1,0 +1,217 @@
+/* Seção carrinho */
+:root{
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+    --cor1:#F2A0DC;
+    --cor2:#A9ABD9;
+    --cor3:#D5D7F2;
+    --cor4:#593A28;
+    --cor5:#F2DCDC;
+}
+
+/* Seção carrinho */
+.carrinho{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+.carrinho a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+i.bi-chevron-double-left{
+    font-size: 70px;
+    padding-left: 1.5rem;    
+}
+
+.nome-carrinho{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0.4rem;
+}
+
+i.bi-cart-x{
+    font-size: 70px;
+    padding-right: 1.5rem; 
+    color: var(--cor4);
+}
+
+/* seção do carrinho com o produto */
+.produtos-carrinho{
+    display: flex;
+    margin: auto;
+    background-color: var(--cor1)
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px var(--cor-empresa);
+    margin-bottom: 2rem;
+}
+
+.img-carrinho, .nome-quantidade, .lixo-valor{
+    width: 40%;
+}
+
+#imagem-produto-carrinho{
+    width: 40%;
+    margin: 2rem; 
+    
+}
+
+.nome-quantidade{
+    justify-content: center;
+}
+
+#nome-produto{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 0.4rem;
+    margin: 1.3rem;
+    text-align: center;
+    color: black;  
+    text-shadow: 1px 1px var(--cor4)
+}
+
+.quantidade{
+    display: flex;
+    justify-content: center;
+}
+
+i.bi-trash{
+    font-size: 50px;
+    padding-top: 2rem;
+    color: var(--cor1);
+}
+
+.lixo-valor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.valor-unitario{
+    font-size: 20px;
+    padding-top: 1.3rem;
+}
+
+/* Seção do CUPOM */
+.cupom{
+    display: flex;
+    justify-content: center;
+}
+
+.input-cupom {
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 25px;
+    width: 50%;
+    padding: .9rem 0 .9rem 0;
+    border: 2px solid var(--cor1);
+    text-align: center;
+    border-radius: 9px;
+  }
+  
+  /* .input-cupom:focus {
+   outline: none;
+  } */
+  
+  ::-webkit-.input-cupom-placeholder {
+    color: grey;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .input-cupom[type="text"]:focus {
+    border: 3px solid var(--cor4);
+  }
+
+  /* seção do botão realizar pagamento */
+
+.botao-aplicar{
+    box-shadow: inset 0px 1px 0px 0px var(--cor3);
+    background: var(--cor5);
+    background-color: var(--cor1);
+    border-radius: 6px;
+    border: 1px solid var(--cor1);
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: .9rem 0 .9rem 0;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px var(--cor3);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 9%;
+}
+
+.botao-aplicar:hover {
+    background: var(--cor2)
+    background-color: var(var(var(--cor5)));
+  }
+
+.botao-aplicar:active {
+    position: relative;
+    top: 1px;
+  }
+
+  /* Seção do pagamento */
+.pagamento{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column; 
+    align-items: center;   
+}
+
+/* #total-delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 12rem;
+    padding: 1.2rem;
+} */
+
+/* .total-delivery{
+    font-size: 25px;
+    padding: .3rem;
+    margin: 0 2rem;
+    color: black;
+    text-shadow: 1px 1px var(--cor-empresa);
+} */
+
+.botao-carrinho{
+   width: 90%;
+   padding: 1.5rem;
+   display: flex;
+}
+
+.botao-add-carrinho{
+    margin: auto;
+}
+
+.botao-add-carrinho{
+    box-shadow: inset 0px 1px 0px 0px var(--cor3);
+    background: var(--cor5);
+    background-color: var(--cor1);
+	border-radius:6px;
+	border:1px solid var(--cor1);
+	display:inline-block;
+	cursor:pointer;
+	color:var(--cor4);
+	font-size:20px;
+	font-weight:bold;
+	padding: 20px 24px 20px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px var(--cor3);
+}
+.botao-a.botao-add-carrinho {
+    background: var(--cor2);
+	background-color: var(--cor5);
+}
+.botao-add-carrinho:active {
+	position:relative;
+	top:1px;
+}

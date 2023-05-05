@@ -1,3 +1,14 @@
+:root{
+  --background-clean: beige;
+  --cor-da-empresa: orange;
+  --cor1:#F2A0DC;
+  --cor2:#A9ABD9;
+  --cor3:#D5D7F2;
+  --cor4:#593A28;
+  --cor5:#F2DCDC;
+
+}
+
 .secao-login {
     width: 60%;
     margin: 2rem auto;
@@ -14,8 +25,8 @@
   
   #nome-empresa {
     font-size: 40px;
-    color: var(--cor-empresa);
-    text-shadow: 2px 2px black;
+    color: var(--cor1);
+    text-shadow: 2px 2px var(--cor2);
     text-align: center;
     padding: 1.5rem;
   }
@@ -37,7 +48,7 @@
     margin-left: 2.4rem;
     font-size: 25px;
     padding: .8rem 0 .8rem 0;
-    color: black;
+    color: var(--cor4);
     text-shadow: 2px 2px var(--cor-empresa);
   }
   
@@ -47,7 +58,7 @@
     font-size: 25px;
     width: 90%;
     padding: .9rem 0 .9rem 0;
-    border: 2px solid rgba(255, 197, 5, 0.943);
+    border: 2px solid var(--cor1);
     text-align: center;
   }
   
@@ -89,11 +100,11 @@
   }
   
   .botao {
-    box-shadow: inset 0px 1px 0px 0px #fce2c1;
-    background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
-    background-color: #ffc477;
+    box-shadow: inset 0px 1px 0px 0px var(--cor3);
+    background: var(--cor5);
+    background-color: var(--cor1);
     border-radius: 6px;
-    border: 1px solid #eeb44f;
+    border: 1px solid var(--cor1);
     display: inline-block;
     cursor: pointer;
     color: black;
@@ -101,7 +112,7 @@
     font-weight: bold;
     padding: 12px 24px 12px 30px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #cc9f52;
+    text-shadow: 0px 1px 0px var(--cor3);
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -109,8 +120,8 @@
   }
   
   .botao:hover {
-    background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
-    background-color: #fb9e25;
+    background: var(--cor2);
+    background-color: var(--cor5);
   }
   
   .botao:active {
