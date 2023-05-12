@@ -19,7 +19,7 @@
 #nome-empresa{
     font-style: bold;
     font-size: 50px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     color: var(--cor4);
 }
 .mensagem{
@@ -41,7 +41,7 @@ i.bi-search{
     position: absolute;
     color: var(--cor1);
     padding-top: 0.2rem;
-    padding-left: 6rem;
+    padding-left: 5rem;
     margin right: 2rem;
     font-size: 40px;
 }
@@ -62,12 +62,9 @@ input:focus{
 
 ::-webkit-input-placeholder{
     color: var(--cor1);
-}
-
-input[type=text]{
-    color: var(--cor4);
     padding: 2rem;
 }
+
 
 /*Eslilização da sção CATEGORIA */
 #categorias{
@@ -76,16 +73,17 @@ input[type=text]{
 
 }
 
-#categoria-ul{
-    display: flex;
-    justify-content: center;
-}
-
 .categoria-a{
     margin: 3rem 5rem;
     text-decoration: none;
     justify-content: center;
 }
+
+#categoria-ul{
+    display: flex;
+    justify-content: center;
+}
+
 li.categoria{
     margin: auto;
 }
@@ -149,9 +147,9 @@ li.categoria{
 
 h3.nome-produto-card{
     display: flex;
-    justify-content: center;
     margin: auto;
     font-size: 20px;
+    justify-content: center;
     color: #593A28;
     margin-bottom: 1.3rem;
 
@@ -164,7 +162,7 @@ h3.nome-produto-card{
     justify-content: flex-end;
     font-size: 30px;
     margin-right: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
         
     }
 
@@ -213,10 +211,10 @@ h3.nome-produto-card{
     color: gray;
     padding: 1.2rem;
 }
-*/
 
- Usando media queries para transformar nossa page acessível a tela menores 
-@media screen and (max-width: 667px){
+
+/*Usando media queries para transformar nossa page acessível a tela menores*/ 
+@media screen and (max-width: 480px){
     body{
       width: 100%;
     }
@@ -269,7 +267,7 @@ h3.nome-produto-card{
   }
   
   
-  @media screen and (max-width: 667px){
+  @media screen and (max-width: 480px){
     body{
         width: 100%;
     }
