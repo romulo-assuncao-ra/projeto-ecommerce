@@ -138,7 +138,7 @@ i.bi-stickies{
 
 /*Usando media queries para transformar nossa page acessível a tela menores*/
 
-@media screen and (max-width: 448px)
+@media screen and (max-width: 448px){
     body{
         width: 100%;
     }
@@ -160,3 +160,4 @@ i.bi-stickies{
     .footer-card a{
         width: 100%;
     }
+}
